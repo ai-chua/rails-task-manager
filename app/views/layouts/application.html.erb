@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RailsTaskManager</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>RailsTaskManager</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <script src="https://kit.fontawesome.com/98cbbfec4b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <div class="main-container">
+    <header class="px-3 mb-2">
+      <h1>My To-Do</h1>
+    </header>
+
+    <div class="tasks-container px-3">
+      <%= yield %>
+    </div>
+  </div>
+</body>
 </html>

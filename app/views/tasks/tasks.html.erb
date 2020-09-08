@@ -1,0 +1,20 @@
+<% @tasks.each do |task| %>
+  <div class="d-flex justify-content-between">
+  <span>
+  <% if task.completed %>
+    <i class="far fa-check-square mr-2"></i>
+  <% else %>
+    <i class="far fa-square mr-2"></i>
+  <% end %>
+<%= link_to task.title, task_path(task) %>
+  </span>
+
+<%= link_to '<i class="far fa-trash-alt ml-2"></i>'.html_safe, task_path(task),method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
+<% end %>
+
+  <br><br>
+  <%= link_to '📝 Add a new task', tasks_new_path %>
+
+<!-- <p><i class="far fa-plus-square mr-2"></i> <%= link_to 'Create a new task!', tasks_new_path %></p>
+ -->

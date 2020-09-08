@@ -1,0 +1,16 @@
+
+<div class="d-flex justify-content-between">
+  <div><span class="label">Title</span> <%= @task.title %></div>
+
+  <div><%= @task.completed ? '<span id="green" class="label">Completed</span>'.html_safe : '<span class="label">Not Complete</span>'.html_safe %></div></div>
+  <blockquote class="my-2"><%= @task.details %></blockquote><br>
+
+  <%= link_to 'Edit task', edit_task_path(@task.id) %>
+  <!-- <i class="fas fa-backspace mr-2"></i> -->
+
+
+
+  <br><br>
+  <%= link_to 'Back to all tasks', tasks_path %><br>
+  <%= link_to '📝 Add a new task', tasks_new_path %>
+

@@ -1,0 +1,11 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.check_box :completed %>
+  <%= f.label :completed %>
+  <%= f.submit %>
+<% end %>
+
+<p><i class="fas fa-backspace mr-2"></i> <%= link_to 'Back to tasks', task_path(@task) %></p>

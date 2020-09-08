@@ -1,0 +1,61 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: #838383;
+  font-family: 'Ubuntu Mono', sans-serif;
+}
+
+a:active, a:visited {
+  text-decoration: none;
+  color: #212529;
+  transition: opacity 0.5s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+header {
+  border-bottom: solid 1px #00000022;
+  font-family: 'Lobster', monospace;
+  color: #838383;
+}
+
+footer {
+  border-top: solid 1px #00000022;
+}
+
+blockquote {
+  background-color: #D3D3D366;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.label {
+  color: white;
+  background-color: #838383;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+#green {
+  background-color: #78AB46;
+}
+
+.main-container {
+  background-color: white;
+  width: 450px;
+  margin: 1em auto;
+  padding: 1em 2em 1em 2em;
+  border-radius: 20px;
+}
+
+.tasks-container {
+  margin: 1em 0 1em 0;
+}
+
+.task {
+
+}
